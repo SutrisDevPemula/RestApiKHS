@@ -15,6 +15,15 @@ class CreateKhsTable extends Migration
     {
         Schema::create('khs', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('nim');
+            $table->string('semster');
+            $table->string('prodi');
+            $table->string('fakultas');
+            $table->string('kurikulum');
+            $table->string('jumlah_sks');
+            $table->string('ip_semster');
+            $table->string('max_sks');
             $table->timestamps();
         });
     }
